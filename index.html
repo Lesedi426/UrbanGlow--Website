@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanGlow Salon</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>UrbanGlow Salon</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#booking">Bookings</a>
+            <a href="#contact">Contact</a>
+            <a href="#location">Location</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home -->
+        <section id="home">
+            <h2>Welcome to UrbanGlow Salon</h2>
+
+            <p>
+                Beauty, skincare and hair styling services
+                designed to help you look and feel your best.
+            </p>
+
+            <a href="#booking">Book an Appointment</a>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About UrbanGlow Salon</h2>
+
+            <p>
+                UrbanGlow Salon is a beauty and grooming company
+                founded in Pretoria in 2022.
+            </p>
+
+            <p>
+                We provide quality beauty services, skincare
+                treatments and hair styling while focusing on
+                customer satisfaction.
+            </p>
+
+            <p>
+                Our goal is to provide excellent beauty services
+                in a calm and professional environment.
+            </p>
+        </section>
+
+        <!-- Services -->
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <article>
+                <h3>Hair Styling</h3>
+                <p>
+                    Professional hair styling services for
+                    different occasions and personal styles.
+                </p>
+            </article>
+
+            <article>
+                <h3>Beauty Services</h3>
+                <p>
+                    Quality beauty treatments designed to
+                    help you feel confident and refreshed.
+                </p>
+            </article>
+
+            <article>
+                <h3>Skincare</h3>
+                <p>
+                    Skincare treatments focused on maintaining
+                    healthy and beautiful-looking skin.
+                </p>
+            </article>
+
+            <article>
+                <h3>Grooming</h3>
+                <p>
+                    Professional grooming services to help
+                    you look and feel your best.
+                </p>
+            </article>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing">
+            <h2>Pricing</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Hair Styling</td>
+                        <td>From R250</td>
+                    </tr>
+
+                    <tr>
+                        <td>Beauty Services</td>
+                        <td>From R200</td>
+                    </tr>
+
+                    <tr>
+                        <td>Skincare</td>
+                        <td>From R300</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grooming</td>
+                        <td>From R200</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                <small>
+                    Prices can be updated with the salon's
+                    actual service prices.
+                </small>
+            </p>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+
+            <figure>
+                <img src="images/hair.jpg"
+                     alt="UrbanGlow hair styling"
+                     width="300">
+                <figcaption>Hair Styling</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/skincare.jpg"
+                     alt="UrbanGlow skincare treatment"
+                     width="300">
+                <figcaption>Skincare</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/beauty.jpg"
+                     alt="UrbanGlow beauty service"
+                     width="300">
+                <figcaption>Beauty Services</figcaption>
+            </figure>
+        </section>
+
+        <!-- Booking -->
+        <section id="booking">
+            <h2>Book an Appointment</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="name">Full Name:</label><br>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required>
+                </p>
+
+                <p>
+                    <label for="service">Select Service:</label><br>
+
+                    <select id="service" name="service" required>
+                        <option value="">
+                            Choose a service
+                        </option>
+
+                        <option value="hair">
+                            Hair Styling
+                        </option>
+
+                        <option value="beauty">
+                            Beauty Services
+                        </option>
+
+                        <option value="skincare">
+                            Skincare
+                        </option>
+
+                        <option value="grooming">
+                            Grooming
+                        </option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="date">Preferred Date:</label><br>
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        cols="40"
+                        placeholder="Enter any additional information">
+                    </textarea>
+                </p>
+
+                <button type="submit">
+                    Submit Booking
+                </button>
+
+            </form>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <address>
+                <p>
+                    <strong>UrbanGlow Salon</strong>
+                </p>
+
+                <p>
+                    Pretoria, Gauteng, South Africa
+                </p>
+
+                <p>
+                    Phone:
+                    <a href="tel:0123456789">
+                        012 345 6789
+                    </a>
+                </p>
+
+                <p>
+                    Email:
+                    <a href="mailto:info@urbanglowsalon.co.za">
+                        info@urbanglowsalon.co.za
+                    </a>
+                </p>
+            </address>
+        </section>
+
+        <!-- Location -->
+        <section id="location">
+            <h2>Our Location</h2>
+
+            <p>
+                Visit UrbanGlow Salon in Pretoria, Gauteng.
+            </p>
+
+            <p>
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Pretoria%2C%20Gauteng"
+                    target="_blank">
+                    View UrbanGlow Salon on Google Maps
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 UrbanGlow Salon. All Rights Reserved.
+        </p>
+
+        <p>
+            Beauty | Skincare | Hair Styling | Grooming
+        </p>
+    </footer>
+
+</body>
+</html>
