@@ -1,6 +1,45 @@
+# UrbanGlow Salon Website
 
- 
-1. Home Page
+## Project Description
+A responsive website for UrbanGlow Salon to increase online presence, showcase services, provide pricing information, and allow easy customer enquiries and bookings.
+
+## Project Goal
+Increase UrbanGlow Salon's online bookings and showcase salon services professionally.
+
+## Technologies Used
+- HTML5
+- CSS3 
+- JavaScript
+- Git & GitHub
+
+## Website Structure
+The website will have the following pages:
+- Home
+- About
+- Services
+- Pricing
+- Gallery
+- Bookings
+- Contact
+- Location
+
+## Design Features
+- **Colour Scheme**: Soft pink, Gold, White
+- **Typography**: Elegant, readable fonts
+- **Layout**: Clean design with large images and clear navigation
+- **Responsive**: Works on Desktop, Laptops, Tablets, and Mobile phones
+
+## Main Navigation
+Home | About | Services | Pricing | Gallery | Bookings | Contact | Location
+
+## Author
+Written by: Mpho Sebina
+
+## GitHub Repository
+https://github.com/Lesedi426/UrbanGlow--Website.git
+ Lesedi426
+
+## 1. Home Page
 The Home page will introduce visitors to UrbanGlow Salon and create a welcoming first impression.
 Sections:
 •	Header/Navigation Bar
@@ -34,7 +73,7 @@ o	Friendly customer service
 o	Customer satisfaction
 •	Call to Action
 o	Encourage visitors to make a booking or contact the salon
-2. About Page
+## 2.About Page
 The About page will provide information about UrbanGlow Salon, its background and its goals.
 Sections:
 •	Our Story
@@ -49,7 +88,7 @@ o	Quality
 o	Professionalism
 o	Customer satisfaction
 o	Beauty and self-care
-3. Services Page
+## 3.Services Page
 The Services page will allow customers to see what UrbanGlow Salon offers.
 Service Categories:
 •	Hair Styling
@@ -75,7 +114,7 @@ Each service can include:
 •	Estimated duration
 •	Price
 •	Book Now button
-4. Pricing Page
+## 4. Pricing Page
 The Pricing page will make it easy for customers to understand the cost of services before making a booking.
 Sections:
 •	Hair Services
@@ -87,7 +126,7 @@ Each price item should display:
 •	Description
 •	Price
 A Book This Service button can be included next to each service.
-5. Gallery Page
+## 5. Gallery Page
 The Gallery will visually showcase UrbanGlow Salon and its work.
 Sections:
 •	Hair Styling
@@ -96,7 +135,7 @@ Sections:
 •	Salon Interior
 •	Before-and-After Results
 Each image should include an appropriate alt text description for accessibility.
-6. Bookings Page
+## 6. Bookings Page
 The Bookings page will allow customers to request an appointment.
 Booking Form:
 •	Full Name
@@ -110,7 +149,7 @@ Booking Form:
 A confirmation message should appear after the form is submitted.
 
 
-7. Contact Page
+## 7. Contact Page
 The Contact page will give customers different ways to communicate with UrbanGlow Salon.
 Sections:
 •	Phone Number
@@ -124,7 +163,7 @@ Contact Form:
 •	Subject
 •	Message
 •	Send Message button
-8. Location Page
+## 8. Location Page
 The Location page will help customers find the salon.
 Sections:
 •	Salon address
@@ -133,7 +172,7 @@ Sections:
 •	Nearby landmarks
 •	Business hours
 •	Get Directions button
-9. Footer
+## 9. Footer
 The footer will appear at the bottom of each page.
 Footer Content:
 •	UrbanGlow Salon logo/name
@@ -152,7 +191,7 @@ The website will use a modern beauty-industry colour palette based on:
 •	Gold
 •	White
 •	Light neutral colours
-Typography
+## Typography
 The website will use elegant but readable fonts to create a professional and modern appearance.
 Layout
 •	Clean and uncluttered design
@@ -161,13 +200,13 @@ Layout
 •	Consistent buttons
 •	Plenty of white space
 •	Responsive layout
-Responsiveness
+## Responsiveness
 The website should work correctly on:
 •	Desktop computers
 •	Laptops
 •	Tablets
 •	Mobile phones
-Main Website Navigation
+## Main Website Navigation
 Home | About | Services | Pricing | Gallery | Bookings | Contact | Location
 The main purpose of the website is to increase UrbanGlow Salon's online presence, attract new customers, showcase its services, provide pricing information, and allow customers to make booking or contact enquiries easily.
 
