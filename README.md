@@ -189,6 +189,6 @@ The image files used by the website are local project assets stored in the `imag
 
 ## Author
 
-- **Student Name:** [Add student name here]
-- **Student Number:** [Add student number here]
+- **Student Name:** Lesedi Ramorula
+- **Student Number:** st10509100
 - **Module:** WEDE5020 Web Development (Introduction)
