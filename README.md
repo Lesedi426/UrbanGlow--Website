@@ -179,9 +179,13 @@ The shared header and footer were made consistent across the pages, while page-s
 
 ## References
 
-No external design framework, external stylesheet, or identifiable external image source is included in the current project files. The site uses local project assets and a local stylesheet. The Location page contains a link to Google Maps for viewing Pretoria, Gauteng, but no separate source citation is recorded in the project files.
+The following resource is used by the website:
 
-- [Add source/reference here]
+- Google Maps — https://www.google.com/maps/search/?api=1&query=Pretoria%2C+Gauteng
+
+The website does not use an external CSS framework or an external stylesheet. All shared styling is contained in the local project stylesheet, `css/style.css`.
+
+The image files used by the website are local project assets stored in the `images/` folder. Image attribution or source information is not included in the project files, and no image creators, external image websites, or image source URLs are identified in the available documentation.
 
 ## Author
 
