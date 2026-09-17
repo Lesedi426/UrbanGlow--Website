@@ -185,7 +185,9 @@ The following resource is used by the website:
 
 The website does not use an external CSS framework or an external stylesheet. All shared styling is contained in the local project stylesheet, `css/style.css`.
 
-The image files used by the website are local project assets stored in the `images/` folder. Image attribution or source information is not included in the project files, and no image creators, external image websites, or image source URLs are identified in the available documentation.
+The website images used in the local `images/` folder were sourced from Unsplash:
+
+- Unsplash — https://unsplash.com/
 
 ## Author
 
