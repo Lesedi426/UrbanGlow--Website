@@ -157,3 +157,27 @@ This changelog records the documented development and improvement stages of the 
 - The external stylesheet was restored and expanded so the existing HTML receives complete presentation styling rather than appearing as unstyled HTML.
 - The colour palette was refined to provide a more professional salon identity while maintaining readable contrast between text, content backgrounds, buttons, and the background image.
 - Responsive rules were retained and verified so the website remains usable on desktop, tablet, and mobile devices without unwanted horizontal scrolling.
+
+## Website Creation Timeline
+
+1. **Initial project planning, proposal and website structure:** Project planning and proposal documentation were established for the WEDE5020 POE, followed by the definition of the UrbanGlow Salon website structure.
+2. **Creation of the multi-page HTML website:** The website was implemented as eight HTML pages for Home, About, Services, Pricing, Gallery, Bookings, Contact, and Location.
+3. **Addition and organisation of website images/assets:** The existing logo, background, price-list, gallery, and map assets were organised in the `images/` folder and connected using project-relative paths.
+4. **UrbanGlow Salon UGS logo implementation:** `images/UGS Logo design.jpg` was added to the shared header on all eight pages.
+5. **Pricing page image and pricing table:** The Pricing page retained its price-list download image and grooming service pricing table.
+6. **Background image and CSS styling:** `images/UrbanGlow background.jpg` was added through `css/style.css`, together with the shared website styling.
+7. **UrbanGlow colour scheme:** The sage green, cream, charcoal, blush, and white colour scheme was implemented through CSS variables and component styling.
+8. **Separate-page navigation:** Navigation was changed from section anchors to separate-page links for Home, About, Services, Pricing, Gallery, Bookings, Contact, and Location.
+9. **Responsive design:** Media queries and responsive rules were added for desktop, tablet, and mobile/phone screen sizes, including layout, navigation, typography, images, forms, and tables.
+10. **Hover, focus and active states:** CSS interaction states were added for links, navigation, buttons, call-to-action elements, and form controls.
+11. **Dedicated service-card styling:** Service sections were given dedicated card styling with spacing, alignment, sage borders, backgrounds, shadows, and mobile adjustments.
+12. **README, references and Unsplash attribution documentation:** README project documentation, Google Maps and Unsplash references, and the local image-source statement were completed without inventing individual photographer or image-page details.
+13. **Testing, validation, GitHub commits and final repository synchronisation:** The HTML pages, CSS, image paths, navigation, responsive behavior, and horizontal scrolling protections were validated. Descriptive commits were created and local `main` was synchronised with `origin/main`.
+
+### Later Refinements
+
+- Added explicit `:active` pseudo-classes for navigation links, buttons, and the Home call-to-action.
+- Added dedicated responsive service-card styling.
+- Completed the README student name and student number information.
+- Added Unsplash image attribution and reference documentation while retaining the Google Maps reference.
+- Completed final validation and synchronised the local `main` branch with `origin/main`.

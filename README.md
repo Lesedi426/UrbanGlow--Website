@@ -91,7 +91,7 @@ The following exact filenames are present in the project's `images/` folder:
 - `UGS Saloon Shop.jpg` — salon-shop image used on the Gallery page.
 - `Map.png` — location map image used on `location.html`.
 
-The project uses local image paths with the exact spelling, capitalisation, spaces, and file extensions shown above. No replacement or online image assets are used by the website's image implementation.
+The project uses local image paths with the exact spelling, capitalisation, spaces, and file extensions shown above. The image assets stored locally in the `images/` folder were sourced from Unsplash, as documented in the References section.
 
 ## File Structure
 
