@@ -170,7 +170,7 @@ https://github.com/Lesedi426/UrbanGlow--Website.git
 
 **Live Website:**
 
-To be added after GitHub Pages is enabled.
+https://lesedi426.github.io/UrbanGlow--Website/
 
 ## 15. References
 
