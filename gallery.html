@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrbanGlow Salon | Gallery</title>
+    <title>Salon Gallery | UrbanGlow Salon Pretoria</title>
+    <meta name="description" content="Browse the UrbanGlow Salon gallery featuring hair styling, barber services and a salon storefront in Pretoria.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UrbanGlow Salon">
+    <meta property="og:title" content="Salon Gallery | UrbanGlow Salon Pretoria">
+    <meta property="og:description" content="Browse the UrbanGlow Salon gallery featuring hair styling, barber services and a salon storefront in Pretoria.">
+    <meta property="og:url" content="https://lesedi426.github.io/UrbanGlow--Website/gallery.html">
+    <meta property="og:image" content="https://lesedi426.github.io/UrbanGlow--Website/images/UGS%20Logo%20design.jpg">
+    <meta property="og:image:alt" content="UrbanGlow Salon logo">
     <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/components/gallery-lightbox.js" defer></script>
 </head>
 
 <body>
@@ -12,7 +21,7 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/UGS Logo Design.jpg" alt="UrbanGlow Salon Logo" width="120">
+                <img src="images/UGS Logo design.jpg" alt="UrbanGlow Salon Logo" width="120">
             </a>
         </div>
         <h1>UrbanGlow Salon</h1>
@@ -24,6 +33,7 @@
             <a href="pricing.html">Pricing</a>
             <a href="gallery.html">Gallery</a>
             <a href="bookings.html">Bookings</a>
+            <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
             <a href="location.html">Location</a>
         </nav>
@@ -34,12 +44,12 @@
     <h2>Gallery</h2>
 
     <figure>
-        <a>
+        <a class="gallery-item" href="images/UGS Hair Stylist.jpg">
             <img
                 src="images/UGS Hair Stylist.jpg"
                 width="300"
                 height="300"
-                alt="Hair styling">
+                alt="Hair stylist working with a client at a salon mirror">
         </a>
 
         <figcaption>Hair Styling</figcaption>
@@ -47,25 +57,25 @@
 
 
     <figure>
-        <a>
+        <a class="gallery-item" href="images/UGS Services.jpg">
             <img
                 src="images/UGS Services.jpg"
                 width="300"
                 height="300"
-                alt="Skincare treatment">
+                alt="Barber trimming a client's hair in a salon">
         </a>
 
-        <figcaption>Skincare Treatment</figcaption>
+        <figcaption>Barber Haircut</figcaption>
     </figure>
 
 
     <figure>
-        <a>
+        <a class="gallery-item" href="images/UGS Barber.jpg">
             <img
                 src="images/UGS Barber.jpg"
                 width="300"
                 height="300"
-                alt="Barber service">
+                alt="Barber shaping a client's haircut">
         </a>
 
         <figcaption>Barber Service</figcaption>
@@ -73,16 +83,27 @@
 
 
     <figure>
-        <a>
+        <a class="gallery-item" href="images/UGS Saloon Shop.jpg">
             <img
                 src="images/UGS Saloon Shop.jpg"
                 width="300"
                 height="300"
-                alt="UrbanGlow Salon">
+                alt="Salon storefront with a glass entrance">
         </a>
 
         <figcaption>UrbanGlow Salon</figcaption>
     </figure>
+
+    <dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="Salon image viewer">
+        <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+        <button class="lightbox-nav lightbox-previous" type="button" aria-label="Previous image">&#10094;</button>
+        <figure class="lightbox-figure">
+            <img class="lightbox-image" src="images/UGS Hair Stylist.jpg" alt="Hair stylist working with a client at a salon mirror">
+            <figcaption class="lightbox-caption" aria-live="polite"></figcaption>
+        </figure>
+        <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">&#10095;</button>
+        <p class="lightbox-count" aria-live="polite"></p>
+    </dialog>
 
 </main>
 

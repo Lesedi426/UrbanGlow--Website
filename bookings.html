@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrbanGlow Salon | Bookings</title>
+    <title>Book an Appointment | UrbanGlow Salon Pretoria</title>
+    <meta name="description" content="Request an UrbanGlow Salon appointment in Pretoria. Choose a service and preferred date, then provide contact details so the salon can follow up.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UrbanGlow Salon">
+    <meta property="og:title" content="Book an Appointment | UrbanGlow Salon Pretoria">
+    <meta property="og:description" content="Request an UrbanGlow Salon appointment in Pretoria. Choose a service and preferred date, then provide contact details so the salon can follow up.">
+    <meta property="og:url" content="https://lesedi426.github.io/UrbanGlow--Website/bookings.html">
+    <meta property="og:image" content="https://lesedi426.github.io/UrbanGlow--Website/images/UGS%20Logo%20design.jpg">
+    <meta property="og:image:alt" content="UrbanGlow Salon logo">
     <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -12,7 +21,7 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/UGS Logo Design.jpg" alt="UrbanGlow Salon Logo" width="120">
+                <img src="images/UGS Logo design.jpg" alt="UrbanGlow Salon Logo" width="120">
             </a>
         </div>
         <h1>UrbanGlow Salon</h1>
@@ -24,6 +33,7 @@
             <a href="pricing.html">Pricing</a>
             <a href="gallery.html">Gallery</a>
             <a href="bookings.html">Bookings</a>
+            <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
             <a href="location.html">Location</a>
         </nav>
@@ -33,36 +43,34 @@
 
         <h2>Book an Appointment</h2>
 
-        <form action="#" method="post">
+        <form id="booking-form" action="#" method="post" novalidate>
 
             <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" required>
-            <br><br>
+            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" required>
+            <p class="field-error" id="name-error"></p>
 
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required>
-            <br><br>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error" required>
+            <p class="field-error" id="email-error"></p>
 
             <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="phone" required>
-            <br><br>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phone-error" required>
+            <p class="field-error" id="phone-error"></p>
 
             <label for="service">Service:</label><br>
 
-            <select id="service" name="service" required>
+            <select id="service" name="service" aria-describedby="service-error" required>
                 <option value="">Select a service</option>
                 <option value="hair">Hair Styling</option>
                 <option value="beauty">Beauty Services</option>
                 <option value="skincare">Skincare</option>
                 <option value="grooming">Grooming</option>
             </select>
-
-            <br><br>
+            <p class="field-error" id="service-error"></p>
 
             <label for="date">Appointment Date:</label><br>
-            <input type="date" id="date" name="date" required>
-
-            <br><br>
+            <input type="date" id="date" name="date" aria-describedby="date-error" required>
+            <p class="field-error" id="date-error"></p>
 
             <label for="message">Message:</label><br>
             <textarea id="message"
@@ -76,7 +84,46 @@
                 Submit Booking
             </button>
 
+            <p class="booking-feedback" id="booking-feedback" role="status" aria-live="polite" tabindex="-1"></p>
+
         </form>
+
+        <section class="booking-faq" data-accordion aria-labelledby="booking-faq-title">
+            <h2 id="booking-faq-title">Booking Questions</h2>
+
+            <div class="accordion-item">
+                <h3>
+                    <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-date">
+                        How do I request an appointment?
+                    </button>
+                </h3>
+                <div class="accordion-panel" id="faq-panel-date" aria-hidden="true">
+                    <p>Complete the booking form above with your preferred service and appointment date. The salon can confirm availability using the contact details you provide.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3>
+                    <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-prices">
+                        Where can I check service prices?
+                    </button>
+                </h3>
+                <div class="accordion-panel" id="faq-panel-prices" aria-hidden="true">
+                    <p>Visit the Pricing page for the current listed services and prices. Contact UrbanGlow Salon to confirm details before your appointment.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3>
+                    <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-change">
+                        What if I need to change my request?
+                    </button>
+                </h3>
+                <div class="accordion-panel" id="faq-panel-change" aria-hidden="true">
+                    <p>Use the Contact page to reach the salon about changes to an appointment request.</p>
+                </div>
+            </div>
+        </section>
 
     </main>
 

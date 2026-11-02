@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Enquiry | UrbanGlow Salon Pretoria</title>
+    <meta name="description" content="Ask UrbanGlow Salon about its listed services, products, prices, or appointment availability. The salon must confirm current details and availability.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UrbanGlow Salon">
+    <meta property="og:title" content="Salon Enquiry | UrbanGlow Salon Pretoria">
+    <meta property="og:description" content="Ask UrbanGlow Salon about its listed services, products, prices, or appointment availability. The salon must confirm current details and availability.">
+    <meta property="og:url" content="https://lesedi426.github.io/UrbanGlow--Website/enquiry.html">
+    <meta property="og:image" content="https://lesedi426.github.io/UrbanGlow--Website/images/UGS%20Logo%20design.jpg">
+    <meta property="og:image:alt" content="UrbanGlow Salon logo">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/features/enquiry-form.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/UGS Logo design.jpg" alt="UrbanGlow Salon Logo" width="120">
+            </a>
+        </div>
+        <h1>UrbanGlow Salon</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="bookings.html">Bookings</a>
+            <a href="enquiry.html" aria-current="page">Enquiry</a>
+            <a href="contact.html">Contact</a>
+            <a href="location.html">Location</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Send a Salon Enquiry</h2>
+        <p>Ask about the salon's listed services, products, pricing, or appointment availability. The salon will need to confirm current details and availability.</p>
+
+        <form id="enquiry-form" class="site-form" action="mailto:info@urbanglowsalon.co.za" method="post" enctype="text/plain" data-ajax-endpoint="">
+            <label for="enquiry-name">Full name</label><br>
+            <input id="enquiry-name" name="name" type="text" autocomplete="name" aria-describedby="enquiry-name-error" data-validate="name" required>
+            <p class="field-error" id="enquiry-name-error"></p>
+
+            <label for="enquiry-email">Email address</label><br>
+            <input id="enquiry-email" name="email" type="email" autocomplete="email" aria-describedby="enquiry-email-error" data-validate="email" required>
+            <p class="field-error" id="enquiry-email-error"></p>
+
+            <label for="enquiry-phone">Phone number</label><br>
+            <input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="enquiry-phone-error" data-validate="phone" required>
+            <p class="field-error" id="enquiry-phone-error"></p>
+
+            <label for="enquiry-type">Enquiry type</label><br>
+            <select id="enquiry-type" name="enquiryType" aria-describedby="enquiry-type-error" data-validate="required" required>
+                <option value="">Select an enquiry type</option>
+                <option value="Salon services">Salon services</option>
+                <option value="Products">Products</option>
+                <option value="Pricing">Pricing</option>
+                <option value="Appointment availability">Appointment availability</option>
+            </select>
+            <p class="field-error" id="enquiry-type-error"></p>
+
+            <label for="enquiry-service">Service of interest</label><br>
+            <select id="enquiry-service" name="service" aria-describedby="enquiry-service-error" data-validate="required" required>
+                <option value="">Select a listed salon service</option>
+                <option value="Hair Styling">Hair Styling</option>
+                <option value="Beauty Services">Beauty Services</option>
+                <option value="Skincare">Skincare</option>
+                <option value="Grooming">Grooming</option>
+            </select>
+            <p class="field-error" id="enquiry-service-error"></p>
+
+            <label for="enquiry-message">Message</label><br>
+            <textarea id="enquiry-message" name="message" rows="6" minlength="10" maxlength="1000" aria-describedby="enquiry-message-error enquiry-message-count" data-validate="message" data-count-target="enquiry-message-count" required></textarea>
+            <p class="field-error" id="enquiry-message-error"></p>
+            <p class="character-count" id="enquiry-message-count">10 to 1000 characters</p>
+
+            <div class="form-actions">
+                <button type="submit">Review Enquiry</button>
+                <button class="button-secondary" type="reset">Reset</button>
+            </div>
+
+            <p class="form-feedback" id="enquiry-feedback" role="status" aria-live="polite" tabindex="-1"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 UrbanGlow Salon. All Rights Reserved. st10509100</p>
+    </footer>
+</body>
+</html>

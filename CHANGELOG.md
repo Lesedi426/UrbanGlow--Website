@@ -2,6 +2,54 @@
 
 This changelog records the documented development and improvement stages of the UrbanGlow Salon website for the WEDE5020 Web Development Introduction POE. The entries describe features verified in the current project files.
 
+## Version 2.3 — Separate Enquiry and Contact Forms
+
+- Added `enquiry.html` for questions about salon services, products, pricing, and appointment availability. The form includes name, email, phone, enquiry type, the four existing salon service choices, a message with a 10–1000 character limit, field-level errors, a live count, Submit, and Reset.
+- Improved `contact.html` with a distinct general contact form for general enquiry, feedback, complaint, or other messages. It includes name, email, phone, message type, a 10–2000 character message, field-level errors, a live count, Submit, and Reset. The existing salon phone, email, general Pretoria address, and opening hours remain.
+- Added `js/features/form-utils.js` for shared validation, accessible feedback, character counts, pre-filled mailto generation, and optional guarded AJAX. Added separate `js/features/enquiry-form.js` and `js/features/contact-form.js` handlers.
+- Both forms retain HTML5 required/type/length constraints when JavaScript is unavailable. Their JavaScript validation adds name, email, phone, required selection, and message length checks with individual feedback.
+- The Enquiry handler provides responses grounded in the existing services/pricing information and explains that product details or appointment availability require confirmation. No services, products, prices, or availability were invented.
+- Both forms use the existing address `info@urbanglowsalon.co.za` for mailto actions. Valid Contact input is compiled into a subject and body for an email draft. The forms state clearly that no message has been sent until the visitor sends the draft.
+- Repository inspection found no server-side form handler or configured submission provider. `data-ajax-endpoint` is blank for both forms, so the handlers do not call `fetch()` unless a real HTTP(S) endpoint is configured. AJAX delivery has not been tested. Formspree is documented as a suitable provider option; endpoint creation/configuration and deployed-origin verification remain required.
+- Added Enquiry to navigation on all pages and retained the separate `bookings.html` appointment request functionality.
+- Browser-tested invalid and valid submissions, field errors, message length, reset, all four type-specific Enquiry responses, Contact email-draft generation, zero `fetch()` calls while endpoints are blank, and mobile overflow at 360px. No backend submission success is claimed.
+- **Files:** added `enquiry.html`, `js/features/form-utils.js`, `js/features/enquiry-form.js`, and `js/features/contact-form.js`; updated the original eight HTML pages for Enquiry navigation and the Contact page for its separate form; updated `css/style.css`, `README.md`, and this changelog.
+
+## Version 2.3 — Separate Enquiry and Contact Forms
+
+- Added `enquiry.html` for questions about salon services, products, pricing, and appointment availability. The form includes name, email, phone, enquiry type, the four existing salon service choices, a message with a 10–1000 character limit, field-level errors, a live count, Submit, and Reset.
+- Improved `contact.html` with a distinct general contact form for general enquiry, feedback, complaint, or other messages. It includes name, email, phone, message type, a 10–2000 character message, field-level errors, a live count, Submit, and Reset. The existing salon phone, email, general Pretoria address, and opening hours remain.
+- Added `js/features/form-utils.js` for shared validation, accessible feedback, character counts, pre-filled mailto generation, and optional guarded AJAX. Added separate `js/features/enquiry-form.js` and `js/features/contact-form.js` handlers.
+- Both forms validate name, email format, phone characters and length, required selections, and message length. The Enquiry handler provides responses grounded in the existing services/pricing information and explains that product details or appointment availability require confirmation.
+- Both forms use the existing address `info@urbanglowsalon.co.za` for mailto actions. Valid Contact input is compiled into a subject and body for an email draft. The forms say clearly that no message has been sent until the visitor sends the draft.
+- Repository inspection found no server-side form handler or configured submission provider. `data-ajax-endpoint` is blank for both forms, so the handlers do not call `fetch()` unless a real HTTP(S) endpoint is configured. AJAX delivery has not been tested. Formspree is documented as a possible provider; endpoint creation/configuration and deployed-origin verification remain required.
+- Added Enquiry to navigation on all pages and retained the separate `bookings.html` appointment request functionality.
+- Browser-tested empty and malformed inputs, message length, reset, valid email-draft generation, type-specific Enquiry responses, no-fetch behavior while unconfigured, and the Contact form at a 360px viewport. No backend submission success is claimed.
+- **Files:** added `enquiry.html`, `js/features/form-utils.js`, `js/features/enquiry-form.js`, and `js/features/contact-form.js`; updated the other eight HTML pages for Enquiry navigation, updated `contact.html`, `css/style.css`, `README.md`, and this changelog.
+
+## Version 2.2 — Part 3 Features, SEO and Final QA
+
+- Added a vanilla JavaScript ES-module structure under `js/components/` and `js/features/`. The shared `js/main.js` entry point is used by Home, Services, and Bookings; Gallery and Location each load one page-specific deferred module.
+- Implemented the booking FAQ accordion and accessible service tabs. Added keyboard navigation for tabs.
+- Added the Home booking-information dialog with close button, Escape and outside-click handling, focus return, and background scroll locking.
+- Added the Gallery lightbox for the existing four images, including previous/next buttons, keyboard arrow navigation, Escape/outside-click/close-button dismissal, transitions, responsive layout, and scroll locking.
+- Added dynamic service search, A-Z sorting, and no-results feedback using the existing Services headings and descriptions. No additional services or prices were introduced.
+- Implemented client-side validation for required booking fields, name, email, phone, service selection, and date. The valid-form message explains that this front-end demo does not transmit a booking.
+- Added a Leaflet map using OpenStreetMap tiles and attribution. Since the project has no verified salon street address or coordinates, the map is explicitly a general Pretoria-area map with no salon pin. The existing map image is retained as a fallback if geocoding fails.
+- Added unique titles and descriptions, Open Graph metadata, and descriptive image alt text across all eight pages. Final QA also corrected the Gallery caption for `UGS Services.jpg` to `Barber Haircut` and assigned the hidden lightbox image a valid initial asset source.
+- Final QA checked navigation and local paths, feature behavior, browser layouts at 390 x 844, 768 x 1024, and 1366 x 900, image loading, SEO metadata, and editor diagnostics. All pages had no horizontal overflow or broken local images at those viewports; VS Code reported no diagnostics errors and `git diff --check` passed.
+- `js/features/animations.js` and `js/features/pricing-controls.js` remain placeholders. The booking form has no backend, and the downloadable `images/UGS Price list.jpg` remains difficult to read because no verified replacement was available.
+- **Files:** all eight HTML pages, `css/style.css`, `js/main.js`, `js/components/accordion-tabs.js`, `js/components/modal.js`, `js/components/gallery-lightbox.js`, `js/features/content-loader.js`, `js/features/booking-validation.js`, and `js/features/leaflet-map.js`.
+
+## Version 2.1 — Part 2 Audit Corrections
+
+- Corrected the UGS logo image path in all eight HTML pages to match the exact existing filename, `images/UGS Logo design.jpg`, including its lowercase `d`.
+- Updated the Pricing page title, heading, price note, and footer to use the UrbanGlow Salon brand consistently.
+- Removed the invalid button-inside-link structure around the downloadable price-list link. The download link now uses the existing button styling directly, while retaining the same target image and download filename.
+- Repaired all four gallery thumbnail links by pointing each link to its corresponding existing image file. The images, captions, and gallery content remain in place.
+- Added `rel="noopener noreferrer"` to the external Google Maps link, which opens in a new tab.
+- Inspected `images/UGS Price list.jpg` and found its text to be largely garbled and unreadable. The image was left unchanged because a verified replacement was not available. Recommended correction: recreate or export a high-resolution price-list image from the verified salon prices, then replace the downloadable image; the readable HTML pricing table remains on `pricing.html` and was not removed.
+
 ## Version 1.0 — Initial Website Development
 
 - Established the website structure using eight separate HTML pages:
@@ -93,7 +141,7 @@ This changelog records the documented development and improvement stages of the 
 - Checked image references against the actual filenames present in the `images` folder.
 - Corrected the UGS logo reference in `index.html` to:
   - `images/UGS Logo design.jpg`
-- Corrected the Home page gallery references to:
+- Corrected the existing local gallery image references to:
   - `images/UGS Hair Stylist.jpg`
   - `images/UGS Services.jpg`
   - `images/UGS Barber.jpg`

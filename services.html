@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrbanGlow Salon | Services</title>
+    <title>Salon Services | UrbanGlow Salon Pretoria</title>
+    <meta name="description" content="Explore UrbanGlow Salon services in Pretoria, including hair styling, beauty services, skincare and grooming. Search the listed services and descriptions.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UrbanGlow Salon">
+    <meta property="og:title" content="Salon Services | UrbanGlow Salon Pretoria">
+    <meta property="og:description" content="Explore UrbanGlow Salon services in Pretoria, including hair styling, beauty services, skincare and grooming. Search the listed services and descriptions.">
+    <meta property="og:url" content="https://lesedi426.github.io/UrbanGlow--Website/services.html">
+    <meta property="og:image" content="https://lesedi426.github.io/UrbanGlow--Website/images/UGS%20Logo%20design.jpg">
+    <meta property="og:image:alt" content="UrbanGlow Salon logo">
     <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -12,7 +21,7 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/UGS Logo Design.jpg" alt="UrbanGlow Salon Logo" width="120">
+                <img src="images/UGS Logo design.jpg" alt="UrbanGlow Salon Logo" width="120">
             </a>
         </div>
         <h1>UrbanGlow Salon</h1>
@@ -24,6 +33,7 @@
             <a href="pricing.html">Pricing</a>
             <a href="gallery.html">Gallery</a>
             <a href="bookings.html">Bookings</a>
+            <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
             <a href="location.html">Location</a>
         </nav>
@@ -33,36 +43,49 @@
 
         <h2>Our Services</h2>
 
-        <section>
-            <h3>Hair Styling</h3>
-            <p>
-                Professional hair styling services for
-                different occasions and personal styles.
-            </p>
-        </section>
+        <section class="services-tabs" data-service-directory>
+            <div class="service-controls">
+                <div class="service-control">
+                    <label for="service-search">Search services</label>
+                    <input id="service-search" type="search" placeholder="Search by service name" aria-controls="service-tab-list">
+                </div>
+                <div class="service-control">
+                    <label for="service-sort">Sort services</label>
+                    <select id="service-sort" aria-controls="service-tab-list">
+                        <option value="original">As listed</option>
+                        <option value="az">Name (A to Z)</option>
+                    </select>
+                </div>
+            </div>
 
-        <section>
-            <h3>Beauty Services</h3>
-            <p>
-                Quality beauty services designed to help
-                you look and feel confident.
-            </p>
-        </section>
+            <p class="service-no-results" role="status" aria-live="polite" hidden>No services match that search. Try another name.</p>
 
-        <section>
-            <h3>Skincare</h3>
-            <p>
-                Skincare procedures designed to help maintain
-                healthy-looking skin.
-            </p>
-        </section>
+            <div class="tab-list" id="service-tab-list" role="tablist" aria-label="Salon service categories">
+                <button id="tab-hair" type="button" role="tab" aria-selected="true" aria-controls="panel-hair">Hair Styling</button>
+                <button id="tab-beauty" type="button" role="tab" aria-selected="false" aria-controls="panel-beauty" tabindex="-1">Beauty Services</button>
+                <button id="tab-skincare" type="button" role="tab" aria-selected="false" aria-controls="panel-skincare" tabindex="-1">Skincare</button>
+                <button id="tab-grooming" type="button" role="tab" aria-selected="false" aria-controls="panel-grooming" tabindex="-1">Grooming</button>
+            </div>
 
-        <section>
-            <h3>Grooming</h3>
-            <p>
-                Professional grooming services for a
-                polished and confident appearance.
-            </p>
+            <section id="panel-hair" class="tab-panel" role="tabpanel" aria-labelledby="tab-hair" tabindex="0">
+                <h3>Hair Styling</h3>
+                <p>Professional hair styling services for different occasions and personal styles.</p>
+            </section>
+
+            <section id="panel-beauty" class="tab-panel" role="tabpanel" aria-labelledby="tab-beauty" tabindex="0">
+                <h3>Beauty Services</h3>
+                <p>Quality beauty services designed to help you look and feel confident.</p>
+            </section>
+
+            <section id="panel-skincare" class="tab-panel" role="tabpanel" aria-labelledby="tab-skincare" tabindex="0">
+                <h3>Skincare</h3>
+                <p>Skincare procedures designed to help maintain healthy-looking skin.</p>
+            </section>
+
+            <section id="panel-grooming" class="tab-panel" role="tabpanel" aria-labelledby="tab-grooming" tabindex="0">
+                <h3>Grooming</h3>
+                <p>Professional grooming services for a polished and confident appearance.</p>
+            </section>
         </section>
 
     </main>

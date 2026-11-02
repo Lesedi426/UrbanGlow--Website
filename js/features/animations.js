@@ -1,0 +1,1 @@
+// Planned scroll-reveal effects with reduced-motion support; CSS keeps existing hover transitions.
