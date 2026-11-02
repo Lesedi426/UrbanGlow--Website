@@ -36,6 +36,37 @@ The website does not use a JavaScript framework, package manager, or CSS framewo
 | Contact | `contact.html` | Provides telephone, email, address, opening hours, and a separate general/feedback/complaint contact form. |
 | Location | `location.html` | Displays a general Pretoria-area Leaflet map, a static map fallback, and a Google Maps search link. The project does not provide verified salon coordinates or a street address. |
 
+## Website Screenshots
+
+The following full-page screenshots show the nine website pages as rendered at the integrated browser's available `642 x 422` viewport. Select a thumbnail to open the full-size image.
+
+### Home
+[![UrbanGlow Salon Home page](screenshots/index.png)](screenshots/index.png)
+
+### About
+[![UrbanGlow Salon About page](screenshots/about.png)](screenshots/about.png)
+
+### Services
+[![UrbanGlow Salon Services page](screenshots/services.png)](screenshots/services.png)
+
+### Pricing
+[![UrbanGlow Salon Pricing page](screenshots/pricing.png)](screenshots/pricing.png)
+
+### Gallery
+[![UrbanGlow Salon Gallery page](screenshots/gallery.png)](screenshots/gallery.png)
+
+### Bookings
+[![UrbanGlow Salon Bookings page](screenshots/bookings.png)](screenshots/bookings.png)
+
+### Enquiry
+[![UrbanGlow Salon Enquiry page](screenshots/enquiry.png)](screenshots/enquiry.png)
+
+### Contact
+[![UrbanGlow Salon Contact page](screenshots/contact.png)](screenshots/contact.png)
+
+### Location
+[![UrbanGlow Salon Location page](screenshots/location.png)](screenshots/location.png)
+
 ## Features
 
 The following features are implemented in the current project:
