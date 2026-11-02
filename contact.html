@@ -82,7 +82,7 @@
                 <p class="field-error" id="contact-email-error"></p>
 
                 <label for="contact-phone">Phone number</label><br>
-                <input id="contact-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="contact-phone-error" data-validate="phone" required>
+                <input id="contact-phone" name="phone" type="tel" autocomplete="tel" pattern="[+]?[0-9\s\(\).\-]{7,25}" title="Use digits, spaces, parentheses, periods or hyphens, with an optional leading plus sign." aria-describedby="contact-phone-error" data-validate="phone" required>
                 <p class="field-error" id="contact-phone-error"></p>
 
                 <label for="contact-message-type">Message type</label><br>

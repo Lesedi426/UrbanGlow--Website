@@ -2,6 +2,15 @@
 
 This changelog records the documented development and improvement stages of the UrbanGlow Salon website for the WEDE5020 Web Development Introduction POE. The entries describe features verified in the current project files.
 
+## Version 2.4 — Final Part 3 Compliance Audit
+
+- Audited all nine HTML pages, CSS, JavaScript modules, local images, navigation, forms, accessibility labels, SEO metadata, and README/CHANGELOG content.
+- Updated the Pricing enquiry response to cite existing table entries (Hairline / Line-Up at R50 and VIP Barber Package at R350), point to the full table, and retain the price-change confirmation caveat.
+- Added valid native HTML phone patterns to the Enquiry and Contact forms; their JavaScript validation continues to check phone characters and digit count.
+- Added the mailto-draft fallback to the Enquiry form when a configured AJAX request fails. Contact already had a draft fallback.
+- Browser QA covered all nine pages at mobile, tablet, and desktop viewport sizes. No broken local images, horizontal overflow, or uncaught JavaScript exceptions were found. Static checks confirmed navigation and local references, unique titles/descriptions, Open Graph metadata, heading structure, alt attributes, and clean diagnostics.
+- Confirmed that no backend or form provider endpoint is configured. No live AJAX delivery is claimed or tested. The email recipient is the address already documented in the project; mailbox deliverability has not been independently verified.
+
 ## Version 2.3 — Separate Enquiry and Contact Forms
 
 - Added `enquiry.html` for questions about salon services, products, pricing, and appointment availability. The form includes name, email, phone, enquiry type, the four existing salon service choices, a message with a 10–1000 character limit, field-level errors, a live count, Submit, and Reset.

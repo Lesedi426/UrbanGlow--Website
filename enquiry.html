@@ -50,7 +50,7 @@
             <p class="field-error" id="enquiry-email-error"></p>
 
             <label for="enquiry-phone">Phone number</label><br>
-            <input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="enquiry-phone-error" data-validate="phone" required>
+            <input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" pattern="[+]?[0-9\s\(\).\-]{7,25}" title="Use digits, spaces, parentheses, periods or hyphens, with an optional leading plus sign." aria-describedby="enquiry-phone-error" data-validate="phone" required>
             <p class="field-error" id="enquiry-phone-error"></p>
 
             <label for="enquiry-type">Enquiry type</label><br>

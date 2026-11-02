@@ -15,7 +15,7 @@ const enquiryGuidance = (type, service) => {
 		return "The website does not list a product catalogue. The salon will need to confirm product information.";
 	}
 	if (type === "Pricing") {
-		return "The Pricing page contains the existing listed grooming prices. Prices may change, so contact the salon to confirm current details.";
+		return "The existing price list shows Hairline / Line-Up at R50 and VIP Barber Package at R350; see the Pricing page for the full listed grooming table. Prices may change, so contact the salon to confirm current details.";
 	}
 	return "The website does not publish live appointment availability. The salon needs to confirm availability for your requested time.";
 };
@@ -71,7 +71,12 @@ export function initializeEnquiryForm() {
 				{ href: draft, label: "Open a pre-filled email draft" }
 			);
 		} catch {
-			showFormFeedback(feedback, "The configured submission service could not accept this enquiry. No message was sent; please try again or email the salon directly.", "error");
+			showFormFeedback(
+				feedback,
+				"The configured submission service could not accept this enquiry. No message was sent.",
+				"error",
+				{ href: createMailtoLink(recipient, subject, body), label: "Open a pre-filled email draft" }
+			);
 		} finally {
 			submitButton.disabled = false;
 		}
